@@ -221,7 +221,7 @@ li{
 		background-color: gray;
 		color: white;
 	}
-@media all and (max-width:350px){
+@media all and (max-width:850px){
 	.left-right{
 		display: none;
 	}

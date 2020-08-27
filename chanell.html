@@ -7,7 +7,7 @@
     <body>
         <header>
             <div class="menu">
-                <ul class="in-block">
+                <ul class="in-block main-menu">
                     <li class="padding-list left"><a class="go-to" href="home.html">home</a></li>
                     <li class="padding-list left"><a class="go-to" href="home.html">by speaker</a></li>
                     <li class="padding-list left"><a class="go-to" href="home.html">by topik</a></li>
@@ -16,6 +16,8 @@
                     <li class="padding-list left"><a class="go-to">contect us</a></li>
                     <li class="padding-list left"><a class="go-to">donate</a></li>
                 </ul>
+                <div class="lines">
+                </div>
             </div>
             <div id="search" class="show">
 				<label for="head-name">pick a speaker/topik:</label>
@@ -96,84 +98,114 @@
                 <video class="main-vid" controls>
                     <source src="css/videos/vid.mp4" type="video/mp4">
                 </video>
-                <div class="coments">
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
+                <div class="switch-bar">
+                    <a class="padding-list go-to" onclick="switchBar('comments-cover')">comments</a>
+                    <a class="padding-list go-to" onclick="switchBar('phone-list')">chanell</a>
+                </div>
+                <div id="comments-cover" class="comments">
+                    <ul id="comments">
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvfghjkhgdghgghfgdgfhgb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                        <li class="comment">scvb dfgh dfgh dfg</li>
+                    </ul>
+                    <div id="ifAddCom" class="ifAddCom">
+                        <a class="send-btn" onclick="show('add-comment')">want to send a coment?</a> 
                     </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-                    <div class="coment">
-                        <p>scvb dfgh dfgh dfg</p>
-                    </div>
-
-                    <div class="add-comint">
+                    <div id="add-comment" class="add-comment show">
                         <div class="inputs left">
                             <input type="text" id="name" placeholder="name">
                             <input type="text" id="mail" placeholder="mail">
                             <br>
                             <br>
                             <vid>
-                                <a class="send-btn">send comint to admin</a>
+                                <a class="send-btn" onclick="addComent()" >send comment to admin</a>
                                 <br>
                                 <br>
-                                <a class="send-btn">send comint to all</a>
+                                <a class="send-btn" onclick="addComent()">send comment to all</a>
                             </vid>
                         </div>
-                        <textarea class="right"></textarea>
+                        <textarea id="textComent" class="right"></textarea>
                     </div>
                 </div>
-            </div>
-
-            <div class="switch left">
-                <a>coment</a>
-            </div>
-            <div class="switch right">
-                <a>more videos</a>
+                <div id="phone-list" class="show phone-list">
+                    <ul>
+                        <li class="vid-cover">
+                            <video class="list-vid left" controls>
+                                <source src="css/videos/vid.mp4" type="video/mp4">
+                            </video>
+                            <p>speaker............</p>
+                            <h4>subgect</h4>
+                            <a href="sighnIn.html">listen</a> 
+                        </li>
+                        <li class="vid-cover">
+                            <video class="list-vid left" controls>
+                                <source src="css/videos/vid.mp4" type="video/mp4">
+                            </video>
+                            <p>speaker............</p>
+                            <h4>subgect</h4>
+                            <a href="sighnIn.html">listen</a> 
+                        </li>
+                        <li class="vid-cover">
+                            <video class="list-vid left" controls>
+                                <source src="css/videos/vid.mp4" type="video/mp4">
+                            </video>
+                            <p>speaker............</p>
+                            <h4>subgect</h4>
+                            <a href="sighnIn.html">listen</a> 
+                        </li>
+                        <li class="vid-cover">
+                            <video class="list-vid left" controls>
+                                <source src="css/videos/vid.mp4" type="video/mp4">
+                            </video>
+                            <p>speaker............</p>
+                            <h4>subgect</h4>
+                            <a href="sighnIn.html">listen</a> 
+                        </li>
+                        <li class="vid-cover">
+                            <video class="list-vid left" controls>
+                                <source src="css/videos/vid.mp4" type="video/mp4">
+                            </video>
+                            <p>speaker............</p>
+                            <h4>subgect</h4>
+                            <a href="sighnIn.html">listen</a> 
+                        </li>
+                        <li class="vid-cover">
+                            <video class="list-vid left" controls>
+                                <source src="css/videos/vid.mp4" type="video/mp4">
+                            </video>
+                            <p>speaker............</p>
+                            <h4>subgect</h4>
+                            <a href="sighnIn.html">listen</a> 
+                        </li>
+                        <li class="vid-cover">
+                            <video class="list-vid left" controls>
+                                <source src="css/videos/vid.mp4" type="video/mp4">
+                            </video>
+                            <p>speaker............</p>
+                            <h4>subgect</h4>
+                            <a href="sighnIn.html">listen</a> 
+                        </li>
+                        <li class="vid-cover">
+                            <video class="list-vid left" controls>
+                                <source src="css/videos/vid.mp4" type="video/mp4">
+                            </video>
+                            <p>speaker............</p>
+                            <h4>subgect</h4>
+                            <a href="sighnIn.html">listen</a> 
+                        </li>
+                    </ul>
+                </div>
             </div>
         </main>
         <script src="js/all.js"></script>
+        <script src="js/chanell.js"></script>
     </body>
 </html>    

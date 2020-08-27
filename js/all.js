@@ -8,4 +8,8 @@ function show(id){
         pic.classList.toggle("down");
         pic.classList.toggle("up");
     }
+    else if(id==="add-comment"){
+        let btnComment = document.getElementById("ifAddCom");
+        btnComment.classList.toggle("show");
+    }
 }

@@ -46,7 +46,6 @@ label{
 ul{
 	margin: auto;
 	list-style-type: none;
-	text-align: center;
 }
 .in-block{
 	display:inline-block;
@@ -82,7 +81,7 @@ body{
 	.go-to{
 		border: 1px solid khaki;
 		border-radius: 50px;
-		padding:10px 15px;
+		padding:7px 10px;
 		margin:10px 5px;
 	}
 	.go-to:hover{
@@ -138,7 +137,7 @@ body{
 			height: 100%;
 			border-radius: 15px;
 		}
-		.coments{
+		.comments{
 			border-radius: 15px;
 			padding: 5px;
 			margin:30px auto 10px auto;
@@ -146,21 +145,22 @@ body{
 			max-width: 90%;
 			background-color:#90450f ;
 		}
-		.coment{
+		.comment{
 			margin:5px ;
 			padding: 2px;
 			border-radius: 15px;
+			max-width: 80%;
 			background-color: white;
-			max-width: 60%;
 			float: none;
 		}
-		.add-comint{
+		.add-comment{
 			position: relative;
-			min-height: 130px;
+			overflow: hidden;
 			text-align: center;
 			background-color: khaki;
 			padding: 10px;
 			border-radius: 15px;
+			bottom: 0;
 		}
 		.inputs{
 			width: 40%;
@@ -179,32 +179,61 @@ body{
 		.send-btn{
 			border-radius: 50px;
 			padding:5px 20px;
+			margin:auto ;
 			background-color: lightgray;
 		}
-		.switch{
+		.send-btn:hover{
+			background-color: rgb(116, 116, 116);
+		}
+		.ifAddCom{
+			padding: 5px;
+			text-align: center;
+		}
+		.switch-bar{
 			display: none;
 		}
-@media all and (max-width:430px){
-	.main-com{
-		width: 100%;
-	}
-	.coments{
-		max-width: 90%;
-		float: left;
-		margin: 0px;
-		display: none;
-		background-color: tomato;
-	}
-	.list{
-		margin-top: 20px;
-		max-width: 90%;
-		float: right;
-		background-color: tomato;
-	}
-	.switch{
-		display: inline-block;
-		width:49% ;
-		border: 1px solid black;
-		background-color:#90450f;
-	}
-}
+		@media all and (max-width:860px){
+			.main-menu{
+				display: none;
+			}
+			.lines{
+				float: right;
+				background-image: url(/css/img/lines.png) ;
+				background-repeat: no-repeat;
+				background-size: 40px 40px;
+				height: 40px;
+				width: 40px;
+				border-radius: 50px;
+			}
+			.list{
+				display: none;
+			}
+			.main-com{
+				background-color: khaki;
+				margin:auto auto auto 5%;
+				max-width: 90%;
+				min-width: 90%;
+			}
+			.main-vid{
+				border-radius: 15px;
+				width: 100%;
+			}
+			.comments{
+				float: left;
+			}
+			.switch-bar{
+				text-align: center;
+				display: block;
+				background-color:#90450f;
+				height:30px ;
+				width: 100%;
+				border-radius: 15px;
+			}
+			.phone-list{
+				margin:30px auto 10px auto;
+				float:right;
+				background-color:white;
+				border-radius: 15px;
+				width: 80%;
+			}
+		}
