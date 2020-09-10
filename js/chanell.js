@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function addComent(){
     let comment=document.getElementById("textComent").value;
     let name=document.getElementById("name");
@@ -31,4 +32,16 @@ function sendCom(id){
     }else{
         document.getElementById("sendCom").innerHTML = "dont want to send a comment?";
     }
+=======
+function addComent(){
+    alert("xcvbnbfdsdfgh")
+    let comment=document.getElementById("textComent").value;
+    let name=document.getElementById("name");
+    var li = document.createElement("LI");
+    var t = document.createTextNode(comment);
+    li.appendChild(t);
+    li.className='comment';
+    let list=document.getElementById("comments");
+    list.insertBefore(li, list.childNodes[0]);
+>>>>>>> 1cea03eafec3c5c720f7d55bcacc8daabcd38806
 }
