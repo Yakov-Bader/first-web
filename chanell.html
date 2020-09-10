@@ -16,8 +16,7 @@
                     <li class="padding-list left"><a class="go-to">contect us</a></li>
                     <li class="padding-list left"><a class="go-to">donate</a></li>
                 </ul>
-                <div class="lines">
-                </div>
+                <div id="lines/x" onclick="mobileMenu()" class="in-block lines right"></div>
             </div>
             <div id="search" class="show">
 				<label for="head-name">pick a speaker/topik:</label>
@@ -26,6 +25,19 @@
 			</div>>
         </header>
         <main class="top">
+            <div id="mobile-menu" class="show mobile-menu">
+                <div class="ka-mobile-menu">
+                    <ul>
+                        <li class="menu-list"><a class="go-to"  href="home.html">home</a></li>
+                        <li class="menu-list"><a class="go-to" href="home.html">by speaker</a></li>
+                        <li class="menu-list"><a class="go-to" href="home.html">by topik</a></li>
+                        <li class="menu-list"><a class="go-to" onclick="show('search')">search</a></li>
+                        <li class="menu-list"><a class="go-to">about us</a></li>
+                        <li class="menu-list"><a class="go-to">contect us</a></li>
+                        <li class="menu-list"><a class="go-to">donate</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="list">
                 <ul>
                     <li class="vid-cover">
@@ -98,10 +110,8 @@
                 <video class="main-vid" controls>
                     <source src="css/videos/vid.mp4" type="video/mp4">
                 </video>
-                <div class="switch-bar">
-                    <a class="padding-list go-to" onclick="switchBar('comments-cover')">comments</a>
-                    <a class="padding-list go-to" onclick="switchBar('phone-list')">chanell</a>
-                </div>
+                <a class="switch-bar right" onclick="switchBar('comments-cover')">comments</a>
+                <a class="switch-bar" onclick="switchBar('phone-list')">chanell</a>
                 <div id="comments-cover" class="comments">
                     <ul id="comments">
                         <li class="comment">scvb dfgh dfgh dfg</li>
@@ -117,7 +127,7 @@
                         <li class="comment">scvb dfgh dfgh dfg</li>
                     </ul>
                     <div id="ifAddCom" class="ifAddCom">
-                        <a class="send-btn" onclick="show('add-comment')">want to send a coment?</a> 
+                        <a id="sendCom" class="send-btn" onclick="sendCom('sendCom')">want to send a coment?</a> 
                     </div>
                     <div id="add-comment" class="add-comment show">
                         <div class="inputs left">
@@ -126,10 +136,10 @@
                             <br>
                             <br>
                             <vid>
-                                <a class="send-btn" onclick="addComent()" >send comment to admin</a>
+                                <a class="send-btn" onclick="addComent()" >send to admin</a>
                                 <br>
                                 <br>
-                                <a class="send-btn" onclick="addComent()">send comment to all</a>
+                                <a class="send-btn" onclick="addComent()">send to all</a>
                             </vid>
                         </div>
                         <textarea id="textComent" class="right"></textarea>
