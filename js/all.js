@@ -2,6 +2,11 @@ function show(id){
     let element = document.getElementById(id);
     element.classList.toggle("show");
 }
+function mobileMenu(){
+    show('mobile-menu');
+    document.getElementById("lines/x").classList.toggle("lines");
+    document.getElementById("lines/x").classList.toggle("x");
+}
 function openMainClass(mainNum){
     let pic = document.getElementById(`down${mainNum}`);
         pic.classList.toggle("down");

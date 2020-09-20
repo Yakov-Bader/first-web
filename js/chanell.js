@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function addComent(){
     let comment=document.getElementById("textComent").value;
     let name=document.getElementById("name");
@@ -19,11 +18,6 @@ function switchBar(or){
         document.getElementById("phone-list").classList.remove('show');
     }
 }
-function mobileMenu(){
-    show('mobile-menu');
-    document.getElementById("lines/x").classList.toggle("lines");
-    document.getElementById("lines/x").classList.toggle("x");
-}
 function sendCom(id){
     show('add-comment');
     let element= document.getElementById('add-comment');
@@ -32,7 +26,8 @@ function sendCom(id){
     }else{
         document.getElementById("sendCom").innerHTML = "dont want to send a comment?";
     }
-=======
+}
+
 function addComent(){
     alert("xcvbnbfdsdfgh")
     let comment=document.getElementById("textComent").value;
@@ -43,5 +38,4 @@ function addComent(){
     li.className='comment';
     let list=document.getElementById("comments");
     list.insertBefore(li, list.childNodes[0]);
->>>>>>> 1cea03eafec3c5c720f7d55bcacc8daabcd38806
 }

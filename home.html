@@ -7,7 +7,7 @@
 	<body>
 		<header>
 			<div class="menu">
-                <ul>
+                <ul class="main-menu">
                     <li class="padding"><a class="go-to" href="home.html">home</a></li>
                     <li class="padding"><a class="go-to" href="home.html">by speaker</a></li>
 					<li class="padding"><a class="go-to" href="home.html">by topik</a></li>
@@ -15,7 +15,8 @@
                     <li class="padding"><a class="go-to">about us</a></li>
                     <li class="padding"><a class="go-to">contect us</a></li>
                     <li class="padding"><a class="go-to">donate</a></li>
-                </ul>
+				</ul>
+				<div id="lines/x" onclick="mobileMenu()" class="in-block lines right"></div>
 			</div>
 			<div id="search" class="show">
 				<label for="head-name">pick a speaker/topik:</label>
@@ -24,6 +25,19 @@
 			</div>
 		</header>
 		<main class="top">
+			<div id="mobile-menu" class="show mobile-menu">
+                <div class="ka-mobile-menu">
+                    <ul>
+						<li class="menu-list"><a class="go-to"  href="home.html">home</a></li>
+                        <li class="menu-list"><a class="go-to" href="home.html">by speaker</a></li>
+                        <li class="menu-list"><a class="go-to" href="home.html">by topik</a></li>
+                        <li class="menu-list"><a class="go-to" onclick="show('search')">search</a></li>
+                        <li class="menu-list"><a class="go-to">about us</a></li>
+                        <li class="menu-list"><a class="go-to">contect us</a></li>
+                        <li class="menu-list"><a class="go-to">donate</a></li>
+                    </ul>
+                </div>
+            </div>
 			<!--main class 1-->
 			<div>
 				<div class="title">

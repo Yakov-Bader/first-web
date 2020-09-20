@@ -16,7 +16,6 @@
     background:#90450f; 
     border-radius: 10px;
 }
-
 /*general*/
 .right{
 	float: right;
@@ -47,8 +46,8 @@ ul{
 	margin: auto;
 	list-style-type: none;
 }
-.in-block{
-	display:inline-block;
+video{
+	margin-right: 10px;
 }
 /*page*/
 html{
@@ -78,6 +77,9 @@ body{
 		border-radius: 15px 15px 0 0;
 		text-transform: uppercase;
 		padding: 5px;
+	}
+	.main-menu{
+		display: inline-block;
 	}
 	.go-to{
 		border: 1px solid khaki;

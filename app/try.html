@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="try.css">
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+        <title>try it</title>
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <div class="inner-menu">
+                    
+                    <div class="padding-menu"><a class="go-to" onclick="change('dry')">dry</a></div>
+                    <div class="padding-menu"><a class="go-to" onclick="change('liquid')">liquid</a></div>
+                    <div class="padding-menu"><a class="go-to" onclick="change('scope')">scope</a></div>
+                    <div class="padding-menu"><a class="go-to" onclick="change('length')">length</a></div>
+                    <div class="padding-menu"><a class="go-to" onclick="change('weight')">weight</a></div>
+                </div>
+                <div class="mobile lines" onclick="mobileMenu()"></div>
+            </div>
+        </header>
+        <main>
+            <div id="mobile-menu" class="mobile-menu right show">
+                <div id="lines" class="mobile x" onclick="mobileMenu()"></div>
+                <ul>
+                    <li class="go-margin"><a class="go" onclick="change('dry')">dry</a></li>
+                    <li class="go-margin"><a class="go" onclick="change('liquid')">liquid</a></li>
+                    <li class="go-margin"><a class="go" onclick="change('scope')">scope</a></li>
+                    <li class="go-margin"><a class="go" onclick="change('length')">length</a></li>
+                    <li class="go-margin"><a class="go" onclick="change('weight')">weight</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="catigory">
+                    <select class="property" id="pick-from-scope" onchange="answerProp('from-scope')">
+                        <option value="egg">ביצה</option>
+                        <option value="log">לוג</option>
+                        <option value="kav">קב</option>
+                        <option value="seah">סאה</option>
+                        <option value="eifa">איפה</option>
+                        <option value="kor">כור</option>
+                        <option value="smk">סמ"ק</option>
+                    </select>
+                    <select class="property show" id="pick-from-dry" onchange="answerProp('from-dry')">
+                        <option value="eifa">איפה</option>
+                        <option value="seah">סאה</option>
+                        <option value="kav">קב</option>
+                        <option value="log">לוג</option>
+                        <option value="egg">ביצה</option>
+                        <option value="kor">כור</option>
+                        <option value="smk">סמ"ק</option>
+                    </select>
+                    <select class="property show" id="pick-from-liquid" onchange="answerProp('from-liquid')">
+                        <option value="eifa">איפה</option>
+                        <option value="seah">סאה</option>
+                        <option value="kav">קב</option>
+                        <option value="log">לוג</option>
+                        <option value="egg">ביצה</option>
+                        <option value="kor">כור</option>
+                        <option value="smk">סמ"ק</option>
+                    </select>
+                    <select class="property show" id="pick-from-length" onchange="answerProp('from-length')">
+                        <option value="finger">אצבע</option>
+                        <option value="tafah">טפח</option>
+                        <option value="sit">סיט</option>
+                        <option value="zeret">זרת</option>
+                        <option value="ama">אמה</option>
+                        <option value="ris">ריס</option>
+                        <option value="mil">מיל</option>
+                        <option value="parsa">פרסה</option>
+                        <option value="sm">ס"מ</option>
+                    </select>
+                    <select class="property show" id="pick-from-weight" onchange="answerProp('from-weight')">
+                        <option value="proota">פרוטה</option>
+                        <option value="isar">איסר</option>
+                        <option value="poondion">פונדיון</option>
+                        <option value="maah">מעה</option>
+                        <option value="dinar">דינר</option>
+                        <option value="shekel">שקל</option>
+                        <option value="sela">סלע</option>
+                        <option value="darkon">דרכון</option>
+                        <option value="mana">מנה</option>
+                        <option value="gram">גרם</option>
+                    </select>
+                    <!--to-->
+                    <p><=</p>
+                    <select class="property" id="pick-to-scope" onchange="answerProp('to-scope')">
+                        <option value="egg">ביצה</option>
+                        <option value="log">לוג</option>
+                        <option value="kav">קב</option>
+                        <option value="seah">סאה</option>
+                        <option value="eifa">איפה</option>
+                        <option value="kor">כור</option>
+                        <option value="smk">סמ"ק</option>
+                    </select>
+                    <select class="property show" id="pick-to-liquid" onchange="answerProp('to-liquid')">
+                        <option value="eifa">איפה</option>
+                        <option value="seah">סאה</option>
+                        <option value="kav">קב</option>
+                        <option value="log">לוג</option>
+                        <option value="egg">ביצה</option>
+                        <option value="kor">כור</option>                            <option value="smk">סמ"ק</option>
+                    </select>
+                    <select class="property show" id="pick-to-dry" onchange="answerProp('to-dry')">
+                        <option value="eifa">איפה</option>
+                        <option value="seah">סאה</option>
+                        <option value="kav">קב</option>
+                        <option value="log">לוג</option>
+                        <option value="egg">ביצה</option>
+                        <option value="kor">כור</option>
+                        <option value="smk">סמ"ק</option>
+                    </select>
+                    <select class="property show" id="pick-to-weight" onchange="answerProp('to-weight')">
+                        <option value="proota">פרוטה</option>
+                        <option value="isar">איסר</option>
+                        <option value="poondion">פונדיון</option>
+                        <option value="maah">מעה</option>
+                        <option value="dinar">דינר</option>
+                        <option value="shekel">שקל</option>
+                        <option value="sela">סלע</option>
+                        <option value="darkon">דרכון</option>
+                        <option value="mana">מנה</option>                            <option value="gram">גרם</option>
+                    </select>
+                    <select class="property show" id="pick-to-length" onchange="answerProp('to-length')">
+                        <option value="finger">אצבע</option>
+                        <option value="tafah">טפח</option>
+                        <option value="sit">סיט</option>
+                        <option value="zeret">זרת</option>
+                        <option value="ama">אמה</option>                            <option value="ris">ריס</option>
+                        <option value="mil">מיל</option>
+                        <option value="parsa">פרסה</option>
+                        <option value="sm">ס"מ</option>
+                    </select>
+                <div class="calculator">
+                    <button class="cal-btn" onclick="num(1)">1</button>
+                    <button class="cal-btn" onclick="num(2)">2</button>
+                    <button class="cal-btn" onclick="num(3)">3</button>
+                    <br>
+                    <button class="cal-btn" onclick="num(4)">4</button>
+                    <button class="cal-btn" onclick="num(5)">5</button>                        <button class="cal-btn" onclick="num(6)">6</button>
+                    <br>
+                    <button class="cal-btn" onclick="num(7)">7</button>
+                    <button class="cal-btn" onclick="num(8)">8</button>
+                    <button class="cal-btn" onclick="num(9)">9</button>
+                    <br>
+                    <button class="cal-btn" onclick="num('.')">.</button>
+                    <button class="cal-btn" onclick="num(0)">0</button>
+                    <button class="cal-btn" onclick="calculate()" >=></button>
+                </div>
+                <br>
+                <div class="answer">
+                    <h2 class="ans" id="num">___</h2>
+                    <h2 class="ans" id="from">___</h2>
+                    <h2 class="ans">=</h2>
+                    <br><br>
+                    <h2 class="ans">:חזוא</h2>
+                    <h2 class="ans" id="czi">___</h2>                        <br>
+                    <h2 class="ans">:גרח</h2>
+                    <h2 class="ans" id="grc">___</h2>
+                    <h2 class="ans" ><=</h2>
+                    <br>
+                    <h2 class="ans" id="to">___</h2> 
+                </div>    
+            </div>
+        </main>
+        <script src="try.js"></script>
+    </body>
+</html>

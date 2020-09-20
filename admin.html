@@ -7,7 +7,7 @@
     <body>
         <header>
             <div class="menu">
-                <ul>
+                <ul class="main-menu">
                     <li class="padding"><a class="go-to" href="home.html">home</a></li>
                     <li class="padding"><a class="go-to" href="home.html">by speaker</a></li>
                     <li class="padding"><a class="go-to" href="home.html">by topik</a></li>
@@ -16,6 +16,7 @@
                     <li class="padding"><a class="go-to">contect us</a></li>
                     <li class="padding"><a class="go-to">donate</a></li>
                 </ul>
+                <div id="lines/x" onclick="mobileMenu()" class="in-block lines right"></div>
             </div>
             <div id="search" class="show">
 				<label for="head-name">pick a speaker/topik:</label>
@@ -24,6 +25,19 @@
 			</div>
         </header>
         <main class="top">
+            <div id="mobile-menu" class="show mobile-menu">
+                <div class="ka-mobile-menu">
+                    <ul>
+                        <li class="menu-list"><a class="go-to"  href="home.html">home</a></li>
+                        <li class="menu-list"><a class="go-to" href="home.html">by speaker</a></li>
+                        <li class="menu-list"><a class="go-to" href="home.html">by topik</a></li>
+                        <li class="menu-list"><a class="go-to" onclick="show('search')">search</a></li>
+                        <li class="menu-list"><a class="go-to">about us</a></li>
+                        <li class="menu-list"><a class="go-to">contect us</a></li>
+                        <li class="menu-list"><a class="go-to">donate</a></li>
+                    </ul>
+                </div>
+            </div>
             <!--open a page-->
            <div class="title">
                 <a class="up-down-left-right up-down plus right" onclick="show('newPage')"></a>
@@ -44,9 +58,8 @@
                 <h3>evening class </h3>
             </div>
             <div id="mainClass1"  class="videos">
-                <a class="left-right left" onclick="nextLeft(1)">
-                    <img class="up-down-left-right" src="css/img/left.png" alt="left">
-                </a>
+                <a class="up-down-left-right left-right btn-left" onclick="nextLeft(1)"></a>
+                <a class="up-down-left-right left-right btn-right" onclick="nextRight(1)"></a>
                 <ul>
                     <li id="vid1-0" class="black vid-cover">
                         <a onclick="addVid(1)">
@@ -102,12 +115,8 @@
                         <a href="sighnIn.html">listen</a>
                     </li>
                 </ul>
-                <a class="left-right right" onclick="nextRight(1)">
-                    <img class="up-down-left-right" src="css/img/right.png" alt="right">
-                </a>
         </main>
         <script src="js/all.js"></script>
         <script src="js/adminScript.js"></script>
-		<script src="js/homeScript.js"></script>
     </body>
 </html>
