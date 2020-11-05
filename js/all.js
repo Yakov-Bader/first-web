@@ -1,3 +1,11 @@
+//export {show};
+values=document.querySelectorAll('.inputs input');
+val = [...values];
+val.forEach(input => input.addEventListener('change',update));
+val.forEach(input => input.addEventListener('mousemove',update));
+function update(){
+    document.documentElement.style.setProperty(`--${this.name}`,this.value);
+}
 function show(id){
     let element = document.getElementById(id);
     element.classList.toggle("show");

@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "adminScript.js",
+  "scripts": {
+    "test": "nodemon back.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yakov-Bader/first-web.git"
+  },
+  "author": "yb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yakov-Bader/first-web/issues"
+  },
+  "homepage": "https://github.com/Yakov-Bader/first-web#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}

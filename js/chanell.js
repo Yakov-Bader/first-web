@@ -27,7 +27,6 @@ function sendCom(id){
         document.getElementById("sendCom").innerHTML = "dont want to send a comment?";
     }
 }
-
 function addComent(){
     alert("xcvbnbfdsdfgh")
     let comment=document.getElementById("textComent").value;

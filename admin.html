@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="css/page.css">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="menu">
                 <ul class="main-menu">
                     <li class="padding"><a class="go-to" href="home.html">home</a></li>
@@ -40,31 +40,27 @@
             </div>
             <!--open a page-->
            <div class="title">
-                <a class="up-down-left-right up-down plus right" onclick="show('newPage')"></a>
+                <a class="up-down-left-right up-down plus right" id="plusList" onclick="newList()"></a>
                 <label for="head-name">type the catigory:</label>
                 <input type="text" name="head-name" id="head-name">
            </div>
            <!--box-->
-           <div class="show videos" id="newPage">
+           <div class="show videos" id="newList">
                 <div class="black vid-cover">
-                    <a onclick="addVid(1)">
-                        <img class="add up-down-left-right" src="css/img/plus.png" alt="huhuh"></img>
-                    </a>
+                    <a onclick="addVid(1)" class="add up-down-left-right"></a>
                 </div> 
             </div>
            <!--add a class with video-->
             <div class="title">
-                <div id="down1" class="up-down-left-right up-down down right" onclick="openMainClass('1')"></div>
+                <div id="down1" class="up-down-left-right up-down down right" onclick="openMainClass(1)"></div>
                 <h3>evening class </h3>
             </div>
             <div id="mainClass1"  class="videos">
                 <a class="up-down-left-right left-right btn-left" onclick="nextLeft(1)"></a>
                 <a class="up-down-left-right left-right btn-right" onclick="nextRight(1)"></a>
-                <ul>
+                <ul class="vids">
                     <li id="vid1-0" class="black vid-cover">
-                        <a onclick="addVid(1)">
-                            <img class="add up-down-left-right" src="css/img/plus.png" alt="huhuh"></img>
-                        </a>
+                        <a onclick="addVid(1)" class="add up-down-left-right"></a>
                     </li>
                     <li id="vid1-1" class="vid-cover">
                         <video controls>
