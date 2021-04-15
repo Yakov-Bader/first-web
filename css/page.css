@@ -9,15 +9,18 @@
     --base:#f0e68c;
 	--secondery:#90450f;
 	--third:#FFFFFF;
-    --blur:10px;
+    --pick:url("img/rozenblum.jpg");
 }
-/*img{
-	filter: blur(var(--blur));
-    padding: var(--spacing);
-    background: var(----third);
-    filter:blur(var(--blur));
-    height: 400px;
-}*/
+.pick{
+	width: 90%;
+	margin-left: 5%;
+	height: 200px;
+	text-align: center;
+	background: var(--base);
+	background-image:var(--pick);
+	background-repeat: no-repeat;
+	background-size: 100% 80%;
+}
 /*bar*/
 ::-webkit-scrollbar {
     width: 20px;
@@ -86,12 +89,6 @@ li{
 h2{
 	margin: 10px;
 }
-.design label{
-	color: var(--secondery);
-}
-.design input{
-	color: var(--third);
-}
 .top{
 	margin-top: 210px;
 }
@@ -103,7 +100,7 @@ h2{
 		height: 200px;
 		text-align: center;
 		background: var(--base);
-		background-image:url(/css/img/rozenblum.jpg);
+		background-image:var(--pick);
 		background-repeat: no-repeat;
 		background-size: 100% 80%;
 		background-position: bottom;
@@ -131,7 +128,6 @@ h2{
 		padding: 10px  0px;
 	}
 	label{
-		color: var(--third);
 		padding: 5px;
 		height: 70px;
 	}
