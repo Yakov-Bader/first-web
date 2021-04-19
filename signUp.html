@@ -11,15 +11,37 @@
             <h1>welcome to .........</h1>
         </header>
         <main>
-            <div class="info right">
-                <input type="text" class="enter information left" id="fistName" placeholder=" first name">
-                <input type="text" class="enter information right" id="lastName" placeholder=" last name">
-                <input type="text" class="enter" id="userName" placeholder=" user name">
-                <input type="text" class="enter" id="email" placeholder=" email">
-                <input type="password" class="enter information left" id="passward" placeholder=" passward">
-                <input type="password" class="enter information right" id="confirm-passward" placeholder=" passward again" >
-                <button class="in" onclick="addUser()">sign up</button>
-            </div>
+            <form class="info right" action="forms.html" method="get">
+                <div>
+                    <label for="Name"></label>
+                    <input type="text" class="enter information" id="Name" name="name" placeholder=" name" required>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" class="enter information" id="email" name="email" placeholder=" email" required>
+                </div>
+                <div>
+                    <label for="password"></label>
+                    <input type="password" class="enter information" id="password" name="password" placeholder=" passward" required>
+                </div>
+                <div>
+                    <label for="confirmPassward"></label>
+                    <input type="password" class="enter information" id="confirmPassward" name="confirmPassward" placeholder=" passward again" required>
+                </div>
+                <div>
+                    <input class="enter information" list="schools" name="school" placeholder=" program" required>
+                    <datalist class="enter" id="schools">
+                        <option value="school">school</option>
+                        <option value="scool">scool</option>
+                        <option value="secool">secool</option>
+                        <option value="cool">cool</option>
+                    </datalist>
+                </div>
+                <div>
+                    <input class="enter" type="submit" value=" Enter ">
+                </div>
+                <p>have a acount? <a href="signIn.html">sign in</a></p>
+            </form>
             <div id="description" class="info left">
                 <h2>
                     sdfbdfb

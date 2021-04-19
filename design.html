@@ -5,24 +5,33 @@
         <link rel="stylesheet" type="text/css" href="css/page.css">
     </head>
     <body>
-        <h2>design the page</h2>
-        
-        <div class="inputs">
-            <label for="schoole">schoole name:</label>
-            <input type="text" name="schoole">
-            <br>
-            <label for="pick">header image:</label>
-            <input type="file" name="pick" value="img/rozenblum.jpg">
-            <br>
-            <label for="base">background color:</label>
-            <input type="color" name="base" value="#f0e68c"></input>
-            <br>
-            <label for="secondery">secondery color:</label>
-            <input type="color" name="secondery" value="#90450f"></input>
-            <br>
-            <label for="third">third color:</label>
-            <input type="color" name="third" value="#FFFFFF"></input>
-        </div>
+        <h2>design the page:</h2>
+        <form class="inputs" action="forms.html" method="get">
+            <div>
+                <label for="school">school name:</label>
+                <input id="school" type="text" name="schoole">
+            </div>
+            <div>
+                <label for="pick">header image:</label>
+                <input id="pick" type="file" name="pick" value="img/rozenblum.jpg">
+            </div>
+            <div>
+                <input id="base" type="color" name="base" value="#f0e68c"></input> 
+                <label for="base">background color</label>
+            </div>
+            <div>
+                <input id="secondery" type="color" name="secondery" value="#90450f"></input>
+                <label for="secondery">secondery color</label>
+            </div>
+            <div>
+                <input id="third" type="color" name="third" value="#FFFFFF"></input>
+                <label for="third">third color</label>
+            </div>
+            <div>
+                <input class="change" type="reset" value="reset"> 
+                <input class="change" type="submit" value="change">
+            </div>
+        </form>
 
         <div>
             <div class="pick"></div>

@@ -5,6 +5,14 @@
     <title>Forms</title>
 </head>
 <body>
-
+    <div id="result"></div>
+    <a href="/">go back</a>
+    <script>
+        const rersult=document.getElementById('result');
+        new URLSearchParams(window.location.search).forEach((value,name)=>{
+            result.append(`${name}: ${value}`);
+            result.append(document.createElement('br'));
+        })
+    </script>
 </body>
 </html>

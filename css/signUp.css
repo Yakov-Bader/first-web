@@ -4,16 +4,20 @@
     top:0;
     left:0;
 }
+:root{
+    --base:#f0e68c;
+	--secondery:#90450f;
+}
 a{
-    color: black;
+    color: var(--secondery);
     text-decoration: none;
 }
 html{
-    background-color: khaki;
+    background-color: var(--base);
 }
 header{
     position: fixed;
-    background-color:burlywood ;
+    background-color:var(--secondery) ;
     padding: 1%;
     width: 100%;
     text-align: center;
@@ -24,16 +28,16 @@ main{
 }
 .info{
     text-align: center;
-    max-width: 40%;
+    min-width: 40%;
+    max-width: 50%;
     margin: auto;
 }
 .enter{
     margin-bottom: 5%;
-    width: 100%;
     border-radius: 25px;
 }
 .information{
-    width: 45%;
+    width: 100%;
 }
 .left{
     float: left; 
@@ -44,19 +48,9 @@ main{
 input {
     font-size:20px;
 }
-button{
-    margin-bottom: 2%;
-    min-width: 45%;
-    font-size: 25px;
-    border-radius: 25px;
-}
 @media all and (max-width:540px){
     main{
         width: 100%;
-    }
-    .information{
-        width: 100%;
-        float: none;
     }
     .info{
         width: 100%;

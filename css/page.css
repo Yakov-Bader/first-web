@@ -75,6 +75,13 @@ a:hover{
 	background-size: 40px 40px;
 	display: block;
 }
+form{
+	width: 40%;
+	margin: auto;
+}
+.change{
+	width: 30%;
+}
 ul{
 	margin: auto;
 	margin-bottom: 0px;
@@ -229,15 +236,20 @@ h2{
 				margin: 5px;
 				padding: 0px;
 			}
+			.picture{
+				height: 50%;
+				width: 95%;
+				margin: 20px auto;
+				background-image: url("img/gross.jpg");
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
 			video{
 				height: 40%;
 				width: 95%;
 				margin-top: 10px;
 				background-color: black;
 				border: 1px solid black;
-			}
-			h4{
-				margin-top:40px;
 			}
 			.black{
 				background-color: black;

@@ -34,20 +34,12 @@ a:visited {
 	color: black;
 	text-decoration: none;
 } 
-label{
-	color:white;
-	padding: 5px;
-	height: 70px;
-}
 .top{
 	margin-top: 270px;
 }
 ul{
 	margin: auto;
 	list-style-type: none;
-}
-video{
-	margin-right: 10px;
 }
 /*page*/
 html{
@@ -58,6 +50,7 @@ body{
 }
 /*header*/
 	header{
+		z-index: 1;
 		position: fixed;
 		width: 90%;
 		margin-left: 5%;
@@ -108,13 +101,21 @@ body{
 		display: block;
 	}
 	/*main*/
-		.main-com{
-			max-width: 60%;
+		.picture{
+			height: 90%;
+			width: 40%;
+			margin-top: 1%;
+			float: right;
+			margin: center;
+			background-image: url("img/gross.jpg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			border-radius: 15px;
 		}
 		.main-vid{
+			z-index: 0;
 			border-radius: 15px;
-			max-width: 100%;
-			min-width: 95%;
+			width: 55%;
 		}
 		.list{
 			width: 39%;
@@ -122,7 +123,7 @@ body{
 			float: right;
 			border-radius: 15px;
 		}
-		.vid-cover{
+		.pick-cover{
 			border-radius: 15px;
 			margin:  2.5%  auto 2.5% auto;
 			box-shadow: 2px 2px;
@@ -131,22 +132,20 @@ body{
 			padding: 5px;
 			background-color: lightgrey;
 		}
-		.vid-cover:hover{
+		.pick-cover:hover{
 			width: 95%;
 			height: 110px;
 		}
-		.list-vid{
-			max-width: 60%;
-			height: 100%;
-			border-radius: 15px;
+		.main-com{
+			width: 50%;
 		}
 		.comments{
 			border-radius: 15px;
 			padding: 5px;
 			margin:30px auto 10px auto;
-			min-width: 85%;
-			max-width: 90%;
+			width: 100%;
 			background-color:#90450f ;
+			float: left;
 		}
 		.comment{
 			margin:5px ;
@@ -166,12 +165,14 @@ body{
 			border-radius: 15px;
 			bottom: 0;
 		}
-		.inputs{
-			width: 40%;
-		}
 		input{
-			margin: auto auto 5px auto;
+			margin-bottom: 3px;
 			width: 100%;
+		}
+		.inputs{
+			margin-top: 10px;
+			width: 40%;
+			float: left;
 		}
 		textarea{
 			position: relative;
@@ -248,20 +249,15 @@ body{
 				border-radius: 50px;
 			}
 			.list{
-				display: none;
+				margin-top: 30px;
+				width: 80%;
 			}
 			.main-com{
-				background-color: khaki;
-				margin:auto auto auto 5%;
-				max-width: 90%;
-				min-width: 90%;
+				width: 80%;
 			}
 			.main-vid{
 				border-radius: 15px;
 				width: 100%;
-			}
-			.comments{
-				float: right;
 			}
 			.switch-bar{
 				text-align: center;
@@ -273,12 +269,5 @@ body{
 				max-width: 48%;
 				min-width: 45%;
 				border-radius: 15px;
-			}
-			.phone-list{
-				margin:30px auto 10px auto;
-				float:left;
-				background-color:white;
-				border-radius: 15px;
-				width: 80%;
 			}
 		}
