@@ -4,7 +4,7 @@
   "description": "learning",
   "main": "adminScript.js",
   "scripts": {
-    "test": "nodemon back.js"
+    "dev": "nodemon back.js"
   },
   "repository": {
     "type": "git",

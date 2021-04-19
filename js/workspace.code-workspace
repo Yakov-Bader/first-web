@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\my_web"
+		},
+		{
+			"path": "..\\..\\..\\30"
+		},
+		{
+			"path": "..\\..\\..\\app"
+		},
+		{
+			"path": "..\\..\\..\\hacthon"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "my_web"
+	}
+}

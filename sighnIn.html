@@ -11,15 +11,17 @@
 		<h1>srtjsfjsyj</h1>
 	</header>
 	<main>
-		<div class="info right">
-			<input type="text" class="enter" id="user" placeholder=" Your name">
-			<input type="password"  class="enter" id="passward" placeholder=" Your passward" >
-			<a href="https://is.aac.ac.il">forgot passward?</a>
+		<form class="info right" action="forms.html" method="get">
+			<label for="yname">Enter you name</label>
+			<input type="text" id="yname" name="yname" >
 			<br>
-			<button class="in" onclick="enter()">enter</button>
+			<label for="ypassword">Enter your password</label>
+			<input type="password" id="ypassword" name="ypassword" >
+			<a href="https://is.aac.ac.il">forgot passward?</a>
+			<input type="submit" value="Submit">
 			<p>don't have a acount?</p>
 			<a href="signUp.html">sign up</a>
-		</div>
+		</form>
 		<div id="description" class="info left">
 			<h2>
 				sdfbdfb
