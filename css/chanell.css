@@ -87,6 +87,16 @@ body{
 	.padding-list{
 		padding: 10px 0px 10px 0px;
 	}
+	.searching{
+		background-color: cornsilk;
+	}
+	.labe{
+		padding: 5px;
+		height: 70px;
+	}
+	input{
+		margin:15px ;
+	}
 	#search{
 		position: relative;
 		margin: auto;
