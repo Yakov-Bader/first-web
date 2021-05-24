@@ -2,7 +2,7 @@
   "name": "js",
   "version": "1.0.0",
   "description": "learning",
-  "main": "adminScript.js",
+  "main": "back.js",
   "scripts": {
     "dev": "nodemon back.js"
   },
@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/Yakov-Bader/first-web#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
+    "moran": "0.0.11",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.6"
   }
 }

@@ -1,4 +1,3 @@
-//export {show};
 values=document.querySelectorAll('.inputs input');
 val = [...values];
 val.forEach(input => input.addEventListener('change',update));
